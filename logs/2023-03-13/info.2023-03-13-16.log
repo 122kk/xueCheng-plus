@@ -1,0 +1,10 @@
+2023-03-13 16:14:39,922 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - GET "/content/course/list?pageNo=1&pageSize=5", parameters={masked}
+2023-03-13 16:14:39,922 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - GET "/content/course/list?pageNo=1&pageSize=5", parameters={masked}
+2023-03-13 16:14:39,927 DEBUG [http-nio-63040-exec-3][AbstractHandlerMapping.java:412] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
+2023-03-13 16:14:39,927 DEBUG [http-nio-63040-exec-3][AbstractHandlerMapping.java:412] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
+2023-03-13 16:14:39,943 DEBUG [http-nio-63040-exec-3][AbstractMessageConverterMethodProcessor.java:273] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-03-13 16:14:39,943 DEBUG [http-nio-63040-exec-3][AbstractMessageConverterMethodProcessor.java:273] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-03-13 16:14:39,943 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - Writing [PageResult(items=[CourseBase(id=null, companyId=null, companyName=null, name=测试名称, users=null, tags= (truncated)...]
+2023-03-13 16:14:39,943 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - Writing [PageResult(items=[CourseBase(id=null, companyId=null, companyName=null, name=测试名称, users=null, tags= (truncated)...]
+2023-03-13 16:14:39,949 DEBUG [http-nio-63040-exec-3][FrameworkServlet.java:1131] - Completed 200 OK
+2023-03-13 16:14:39,949 DEBUG [http-nio-63040-exec-3][FrameworkServlet.java:1131] - Completed 200 OK
