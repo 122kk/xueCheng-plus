@@ -20,10 +20,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author Mr.M
- * @version 1.0
- * @description TODO
- * @date 2023/2/11 15:44
+ * @author kj
+ * @date 2023/3/14
+ * @apiNote
  */
 @Api(value = "课程信息管理接口",tags = "课程信息管理接口")
 @RestController
@@ -60,7 +59,7 @@ public class CourseBaseInfoController {
     @ApiOperation("修改课程基础信息")
     @PutMapping("/course")
     public CourseBaseInfoDto modifyCourseBase(@RequestBody EditCourseDto dto){
-        Long companyId=22L;
+        Long companyId=1232141425L;
         return courseBaseInfoService.updateCourseBase(companyId,dto);
     }
 }

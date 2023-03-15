@@ -1,6 +1,1 @@
-2023-03-15 00:03:34,882 ERROR [http-nio-63040-exec-1][GlobalExceptionHandler.java:30] - 捕获异常：本机构只能修改本机构的课程
-2023-03-15 00:07:02,385 ERROR [http-nio-63040-exec-4][GlobalExceptionHandler.java:30] - 捕获异常：本机构只能修改本机构的课程
-2023-03-15 00:13:36,290 ERROR [http-nio-63040-exec-1][GlobalExceptionHandler.java:30] - 捕获异常：本机构只能修改本机构的课程
-2023-03-15 00:14:33,145 ERROR [http-nio-63040-exec-1][GlobalExceptionHandler.java:30] - 捕获异常：本机构只能修改本机构的课程
-2023-03-15 00:16:17,130 ERROR [http-nio-63040-exec-2][GlobalExceptionHandler.java:30] - 捕获异常：本机构只能修改本机构的课程
-2023-03-15 00:17:53,996 ERROR [http-nio-63040-exec-1][GlobalExceptionHandler.java:30] - 捕获异常：本机构只能修改本机构的课程
+2023-03-15 16:03:28,369 ERROR [http-nio-63040-exec-4][GlobalExceptionHandler.java:45] - 捕获异常：Request method 'POST' not supported
