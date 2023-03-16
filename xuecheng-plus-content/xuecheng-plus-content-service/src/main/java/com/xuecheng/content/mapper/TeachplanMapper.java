@@ -15,4 +15,8 @@ import java.util.List;
  */
 public interface TeachplanMapper extends BaseMapper<Teachplan> {
     public List<TeachplanDto> selectTreeNodes(Long courseId);
+
+    public Teachplan selectDownTeachplan(Teachplan teachplan);
+
+    public Teachplan selectUpTeachplan(Teachplan teachplan);
 }

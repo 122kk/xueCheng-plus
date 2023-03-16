@@ -21,3 +21,7 @@ swagger:
   base-package: com.xuecheng.content
   version: 1.0.0
   enabled: true
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

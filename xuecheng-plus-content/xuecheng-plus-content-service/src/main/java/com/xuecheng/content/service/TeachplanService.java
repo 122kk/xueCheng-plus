@@ -1,7 +1,9 @@
 package com.xuecheng.content.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.xuecheng.content.model.dto.SaveTeachplanDto;
 import com.xuecheng.content.model.dto.TeachplanDto;
+import com.xuecheng.content.model.po.Teachplan;
 
 import java.util.List;
 
@@ -10,7 +12,7 @@ import java.util.List;
  * @date 2023/3/15
  * @apiNote
  */
-public interface TeachplanService {
+public interface TeachplanService extends IService<Teachplan> {
     public List<TeachplanDto> findTeachplayTree(Long courseId);
 
     /**
@@ -18,4 +20,16 @@ public interface TeachplanService {
      * @param dto
      */
     public void saveTeachplan(SaveTeachplanDto dto);
+
+    /**
+     * 查询当前信息的下一条信息
+     * @param id
+     */
+    public void updateDownTeachplan(Long id);
+
+    /**
+     * 查询当前信息的上一条信息
+     * @param id
+     */
+    public void updateUpTeachplan(Long id);
 }

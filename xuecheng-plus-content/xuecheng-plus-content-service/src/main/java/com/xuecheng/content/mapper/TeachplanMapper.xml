@@ -127,4 +127,55 @@
             one.orderby,
             two.orderby
     </select>
+
+<!--    获取当前数据的下一条数据-->
+    <select id="selectDownTeachplan" parameterType="com.xuecheng.content.model.po.Teachplan" resultMap="BaseResultMap">
+        SELECT
+        *
+        FROM teachplan
+        WHERE
+              course_id = #{courseId}
+                AND grade = #{grade}
+                AND orderby > #{orderby}
+        ORDER BY
+            orderby ASC
+            LIMIT 1
+    </select>
+
+    <select id="selectUpTeachplan" parameterType="com.xuecheng.content.model.po.Teachplan" resultMap="BaseResultMap">
+        SELECT
+        *
+        FROM teachplan
+        WHERE
+            course_id = #{courseId}
+            AND grade = #{grade}
+            AND orderby &lt; #{orderby}
+        ORDER BY
+            orderby DESC
+            LIMIT 1
+    </select>
+
+<!--    <update id="moveDownTeachplan" parameterType="map">-->
+<!--        UPDATE `teachplan`-->
+<!--        SET orderby = #{}-->
+<!--        WHERE-->
+<!--                id = (-->
+<!--                SELECT-->
+<!--                    t.id-->
+<!--                FROM-->
+<!--                    (-->
+<!--                        SELECT-->
+<!--                            id-->
+<!--                        FROM-->
+<!--                            teachplan t-->
+<!--                        WHERE-->
+<!--                            t.course_id = #{}-->
+<!--                          AND t.grade = #{}-->
+<!--                          AND t.orderby > #{}-->
+<!--                        ORDER BY-->
+<!--                            t.orderby DESC-->
+<!--                            LIMIT 1-->
+<!--                    ) t-->
+<!--            )-->
+<!--    </update>-->
 </mapper>
