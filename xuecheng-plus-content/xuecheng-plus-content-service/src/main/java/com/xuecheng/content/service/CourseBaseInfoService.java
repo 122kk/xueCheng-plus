@@ -44,4 +44,10 @@ public interface CourseBaseInfoService {
      * @return 课程信息
      */
     public CourseBaseInfoDto getCourseBaseInfo(Long courseId);
+
+    /**
+     * 根据id删除课程
+     * @param courseId 课程id
+     */
+    public void deleteCourseBaseInfo(Long courseId);
 }

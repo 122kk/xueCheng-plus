@@ -25,7 +25,8 @@ public class TeachplanController {
     // 获取课程计划
     @GetMapping("/teachplan/{courseId}/tree-nodes")
     public List<TeachplanDto> getTreeNodes(@PathVariable Long courseId){
-        return teachplanService.findTeachplayTree(courseId);
+        List<TeachplanDto> teachplayTree = teachplanService.findTeachplayTree(courseId);
+        return teachplayTree;
     }
 
     // 添加课程计划
