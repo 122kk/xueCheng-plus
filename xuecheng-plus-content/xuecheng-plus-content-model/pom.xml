@@ -13,6 +13,12 @@
             <groupId>com.xuecheng</groupId>
             <artifactId>xuecheng-plus-base</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-web</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!--存在mybatisplus注解添加相关注解保证不报错-->
         <dependency>

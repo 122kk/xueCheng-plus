@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: content-service
+  cloud:
+    nacos:
+      server-addr: 192.168.137.136:8848
+      config:
+        namespace: dev402
+        group: xuecheng-plus-project
+        file-extension: yaml
+        refresh-enabled: true
+  profiles:
+    active: dev
+
+
+logging:
+  config: classpath:log4j2-dev.xml
